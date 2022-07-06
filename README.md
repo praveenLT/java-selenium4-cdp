@@ -1,4 +1,4 @@
-# Java-Selenium-Sample
+# How to use Chrome DevTools Protocol (CDP) for automation test in Java-selenium on LambdaTest
 ![Java](https://www.lambdatest.com/support/assets/images/og-images/Java-with-Selenium-1-1.jpg)
 
 ### Prerequisites
