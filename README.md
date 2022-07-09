@@ -12,7 +12,19 @@
     ```
      install maven
     ```
-    
+### To print CDP console log, the following code can be used:
+```java
+ DevTools devTools = ((HasDevTools) driver).getDevTools();
+    devTools.createSession();
+
+    devTools.send(Log.enable());
+    devTools.addListener(Log.entryAdded(), logEntry -> {
+      System.out.println("text: " + logEntry.getText());
+      System.out.println("level: " + logEntry.getLevel());
+      status = true;
+    });
+ ```
+ 
 ### Run your First Test
 1. Clone the Java-Selenium-Sample repository. 
 ```
